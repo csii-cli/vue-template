@@ -1,0 +1,24 @@
+[
+  {
+    "name": "homes",
+    "path": "/homes",
+    "label": "ImJohn",
+    "items": [
+      {
+        "name": "javascript",
+        "path": "/javascript",
+        "label": "javascript"
+      },
+      {
+        "name": "nodejs",
+        "path": "/nodejs",
+        "label": "NodeJs"
+      },
+      {
+        "name": "java",
+        "path": "/java",
+        "label": "Java"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+/* size:  auto;   auto is the initial value */
+/* margin: 3mm;  this affects the margin in the printer settings */
+@page {
+  margin: 0 10mm;
+}
+
+html {
+  background-color: #ffffff;
+  margin: 0; /* this affects the margin on the html before sending to printer */
+}

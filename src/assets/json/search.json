@@ -1,0 +1,87 @@
+[
+  {
+    "value": "m-table",
+    "name": "m-table",
+    "path": "/m-table"
+  },
+  {
+    "value": "m-filter",
+    "name": "m-filter",
+    "path": "/m-filter"
+  },
+  {
+    "value": "m-provider",
+    "name": "m-provider",
+    "path": "/m-provider"
+  },
+  {
+    "name": "m-file",
+    "path": "./m-file",
+    "value": "m-file"
+  },
+  {
+    "name": "m-qrcode",
+    "path": "./m-qrcode",
+    "value": "m-qrcode"
+  },
+  {
+    "name": "m-class",
+    "path": "./m-class",
+    "value": "m-class"
+  },
+  {
+    "name": "m-blob",
+    "path": "./m-blob",
+    "value": "m-blob"
+  },
+  {
+    "name": "m-print",
+    "path": "./m-print",
+    "value": "m-print"
+  },
+  {
+    "name": "m-component",
+    "path": "./m-component",
+    "value": "m-component"
+  },
+  {
+    "name": "m-forOf",
+    "path": "./m-forOf",
+    "value": "m-forOf"
+  },
+  {
+    "name": "m-object",
+    "path": "./m-object",
+    "value": "m-object"
+  },
+  {
+    "name": "m-utils",
+    "path": "./m-utils",
+    "value": "m-utils"
+  },
+  {
+    "name": "m-crypto",
+    "path": "./m-crypto",
+    "value": "m-crypto"
+  },
+  {
+    "name": "m-sm4",
+    "path": "./m-sm4",
+    "value": "m-sm4"
+  },
+  {
+    "name": "m-i18n",
+    "path": "./m-i18n",
+    "value": "m-i18n"
+  },
+  {
+    "name": "m-directive",
+    "path": "./m-directive",
+    "value": "m-directive"
+  },
+  {
+    "name": "m-parse",
+    "path": "./m-parse",
+    "value": "m-parse"
+  }
+]
