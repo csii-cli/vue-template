@@ -7,9 +7,6 @@ import i18n from '@/lang'
 import printJS from '@/plugin/print-js'
 import ElementUI from 'element-ui'
 import config from '@/config'
-import mSm4 from 'vue-msm4'
-import mavonEditor from 'mavon-editor'
-import lsWeb from 'ls-web'
 import animated from 'animate.css'
 
 // 混入指令 翻译枚举
@@ -20,7 +17,6 @@ import '@/assets/style/css/public.less'
 import '@/assets/style/css/home.less'
 import 'swiper/dist/css/swiper.min.css'
 import 'swiper/dist/js/swiper.min'
-import 'mavon-editor/dist/css/index.css'
 import Print from '@/components/vue-print-nb'
 
 import 'element-ui/lib/theme-chalk/index.css'
@@ -42,9 +38,6 @@ Vue.prototype.$store = store
 
 Vue.use(ElementUI)
 Vue.use(Print)
-Vue.use(mSm4)
-Vue.use(mavonEditor)
-Vue.use(lsWeb)
 Vue.use(animated)
 
 new Vue({

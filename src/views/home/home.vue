@@ -17,12 +17,7 @@
               </li>
             </div>
             <ul class="list-ul" v-if="article.length">
-              <li
-                class="list-li"
-                @click.stop="GoArticleDetail(item, false)"
-                v-for="(item, index) in article"
-                :key="index"
-              >
+              <li class="list-li" @click.stop="GoArticleDetail(item, false)" v-for="(item, index) in article" :key="index">
                 <div class="meta-container">
                   <div class="user-message">
                     {{ item.aticleAuthor }}
@@ -47,9 +42,7 @@
                   </li>
                   <li @click.stop.prevent="addGood(item)">
                     <i class="el-icon-thumb" :class="item.isGood ? 'active' : ''"></i>
-                    <span class="icon-span" :class="item.isGood ? 'active' : ''">{{
-                      item.goodNum
-                    }}</span>
+                    <span class="icon-span" :class="item.isGood ? 'active' : ''">{{ item.goodNum }}</span>
                   </li>
                   <li @click.stop.prevent="GoArticleDetail(item, true)">
                     <i class="el-icon-chat-round"></i>
@@ -90,13 +83,9 @@ export default {
     }
   },
   mounted() {
-    this.test()
     this.routeName = this.$route.params.id
     this.user_id = Number(sessionStorage.getItem('USER_ID'))
     if (this.$route.params.id === 'imjohn') {
-      this.getArt()
-      this.getArt()
-      this.getArt()
       this.getArt()
     } else {
       this.getTypeArt(this.$route.params.id)
@@ -104,36 +93,6 @@ export default {
     // this.init()
   },
   methods: {
-    test() {
-      var imgObj = document.getElementById('imgToGray')
-      imgObj.src = this.gray(imgObj)
-    },
-
-    gray(imgObj) {
-      var canvas = document.createElement('canvas')
-      var canvasContext = canvas.getContext('2d')
-
-      var imgW = imgObj.width
-      var imgH = imgObj.height
-      canvas.width = imgW
-      canvas.height = imgH
-
-      canvasContext.drawImage(imgObj, 0, 0)
-      var imgPixels = canvasContext.getImageData(0, 0, imgW, imgH)
-
-      for (var y = 0; y < imgPixels.height; y++) {
-        for (var x = 0; x < imgPixels.width; x++) {
-          var i = y * 4 * imgPixels.width + x * 4
-          var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3
-          imgPixels.data[i] = avg
-          imgPixels.data[i + 1] = avg
-          imgPixels.data[i + 2] = avg
-        }
-      }
-      canvasContext.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height)
-      return canvas.toDataURL()
-    },
-
     goTo(val) {
       this.$router.push(val)
     },
@@ -143,10 +102,7 @@ export default {
       for (let i = 0; i < val.length; i++) {
         val[i].top_mids &&
           val[i].top_mids.forEach((ele) => {
-            if (
-              Number(sessionStorage.getItem('USER_ID')) === Number(ele.userId) &&
-              ele.goodFlag === '1'
-            ) {
+            if (Number(sessionStorage.getItem('USER_ID')) === Number(ele.userId) && ele.goodFlag === '1') {
               val[i].isGood = true
             }
           })
@@ -248,8 +204,7 @@ export default {
 
           break
         case '最近文章':
-          this.article =
-            this.article && this.article.length > 5 ? this.article.slice(0, 5) : this.article
+          this.article = this.article && this.article.length > 5 ? this.article.slice(0, 5) : this.article
           val.active = true
           break
       }
@@ -424,5 +379,3 @@ html {
   filter: gray;
 }
 </style>
-if (this.$route.name === 'index') { document.body.classList.add('test') } else {
-document.body.classList.remove('test') } beforeDestroy() { document.body.classList.remove('test') }

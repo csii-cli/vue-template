@@ -1,7 +1,6 @@
 import MyHome from '@/layout/my-home/my-home'
 import wrap from '@/views/home/home'
 import demo from './modules/demo/index'
-import article from './modules/article/index'
 export const frameInRoutes = [
   {
     path: '/',
@@ -39,8 +38,7 @@ export const getRouters = [
         },
         component: wrap
       },
-      ...demo,
-      ...article
+      ...demo
     ]
   },
   {
